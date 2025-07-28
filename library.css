@@ -14,7 +14,7 @@ body{
     
 }
 .blue{
-    background-color: rgb(109, 187, 240);
+    background-color: rgb(2, 70, 2);
     color: white;
     text-decoration: none;
     padding: 5px;
@@ -26,18 +26,14 @@ body{
     color: white;
     margin-left: 5px;
 }
-.icon .search{
-    margin-right: 5px;
-    padding: 2px;
-}
 .icon{
     display: flex;
     justify-content: space-evenly;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .icon a { 
     text-decoration: none;
-    font-size: 13px;
+    font-size: 20px;
     text-decoration: none;
 }
 .dropdown {
@@ -94,15 +90,15 @@ body{
     position: relative;
 }
 .details h1{
-    color: yellowgreen;
+    color: rgb(35, 218, 18);
 }
 .details h5{
     font-size: 13px;
-    color: rgb(135, 184, 240);
+    color: rgb(54, 66, 3);
     margin-top: 0;
     position: absolute;
     left: 90px;
-    right: 5px;
+    right: 40px;
     top: 50px;
 }
 .details p{
@@ -166,6 +162,32 @@ margin-top: 4px;
     font-size: 12px;
     margin-top: 6px;
 }
+.background-image{
+    background-size: cover;
+    z-index: -1;
+    opacity: 15%;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+   
+}
+.menu{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.menu span{
+    display: block;
+    background-color: green;
+    margin-bottom: 5px;
+    width: 15px;
+    height: 2px;
+}
 
-
-    
+@media screen (max-width: 400px) {
+    .dropdown{
+        
+    }
+}

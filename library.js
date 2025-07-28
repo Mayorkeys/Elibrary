@@ -13,3 +13,7 @@ for (let year = 2025; year >= 1800; year--) {
     toYear.appendChild(toOption);
     
 }
+
+document.getElementById('menu').addEventListener('click', () => {
+    document.getElementById('nav-content').style.display = document.getElementById('nav-content').style.display === 'block' ? 'none' : 'block';
+});
