@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.color{
+    font-size: 10px;
+    
+}
+.blue{
+    background-color: rgb(109, 187, 240);
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+} 
+.green{
+    background-color: rgb(90, 189, 44);
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+}
+.icon .search{
+    margin-right: 5px;
+    padding: 2px;
+}
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+.icon a { 
+    text-decoration: none;
+    font-size: 13px;
+    text-decoration: none;
+}
+.dropdown {
+    overflow: hidden;
+
+}
+.dropdown .drop-btn {
+    border: none;
+    font-size: 12px;
+    margin-top: -2px;
+   
+}
+.dropdown .drop-btn:hover{
+    background-color: green;
+    color: white;
+    transition: 1.2s;
+    padding: 4px;
+    border-radius: 3px;
+
+}
+.drop-content{
+    display: none;
+    position: absolute;
+    box-shadow: 0 1px 0 1px;
+    background-color: antiquewhite;
+    min-width: 20px;
+    z-index: 1;
+}
+.drop-content a{
+    float: none;
+    display: block;
+    font-size: 10px;
+    text-align: left;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+.drop-content a:hover{
+    padding: 6px;
+    color: green;
+
+}
+.dropdown:hover .drop-content {
+    display: block;
+}
+.container{
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.details h1{
+    color: yellowgreen;
+}
+.details h5{
+    font-size: 13px;
+    color: rgb(135, 184, 240);
+    margin-top: 0;
+    position: absolute;
+    left: 90px;
+    right: 5px;
+    top: 50px;
+}
+.details p{
+    font-size: 10px;
+    margin-top: 0;
+   display: flex;
+   justify-content: center;
+   color: rgb(131, 126, 126);
+}
+input{
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 10px;
+}
+button:hover, input:hover{
+    border: 1px solid rgb(40, 179, 214);
+} 
+input:focus{
+    border: 1px solid rgb(40, 179, 214);
+}
+button{
+    margin-top: 2px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.box{
+    background-color: blue;
+}
+.check{
+    position: absolute;
+    font-size: small;
+    top: 10rem;
+    bottom: 20px;  
+    color: rgb(116, 110, 110);
+    cursor: pointer;
+}
+.check summary{
+    text-decoration: underline dotted;
+}
+
+.check form{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 70%;
+}
+.check form label{
+display: flex;
+flex-direction: row;
+margin-top: 4px;
+}
+#yearfrom,  #yearto {
+    border: 1px solid rgb(105, 101, 101);
+    color: rgb(116, 110, 110);
+    background-color: white;
+    padding: 4px;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+
+    
