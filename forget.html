@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Library Login</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Forget Password</title>
+    <link rel="stylesheet" href="forget.css">
 </head>
 <body>
     <div class="container">
         <div class="login-form">
-                <h2>Login</h2>
+            <div class="forget">
+               <h2>Forget Password</h2>
+               <i class="arrow"><a href="login.html"><img src="/images/arrow.png" width="30px"></a> </i>
+            </div>
+                
                 <form>
                     <input type="text" placeholder="email" name="email" required><br>
                     <div class="password">
-                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="password" placeholder="NewPassword" required>
                      <img id="icon" src="/images/eye-icon.png" width="20px" onclick="togglePassword('password', 'icon')">
                     </div>
-                    <br>
-                    <button  type="submit" required>Login</button>
+                    <button type="submit" id="button" required>Reset Password</button>
                 </form>
-                <a href="forget.html" class="forget">Forgot Password?</a>
-                <p>Don't have an account? <a href="signup.html" class="login-btn">Sign Up</a></p>
-            </div>
         </div>
     </div>
 </body>
-<script src="login.js"></script>
+<script src="forget.js"></script>
 </html>

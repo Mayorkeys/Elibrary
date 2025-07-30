@@ -185,9 +185,3 @@ margin-top: 4px;
     width: 15px;
     height: 2px;
 }
-
-@media screen (max-width: 400px) {
-    .dropdown{
-        
-    }
-}
