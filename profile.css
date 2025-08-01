@@ -31,6 +31,8 @@ ul li a{
 .profile{
     margin: 10px;
     padding: 7px;
+    position: relative;
+    overflow: hidden;
      
 }
 .profile .box img{
@@ -40,14 +42,18 @@ ul li a{
 }
 .profile .upload{
     background-color: rgb(6, 95, 40);
-    width: 130px;
+    width: 200px;
     margin-left: 5px;
     position: relative;
+    border-radius: 5px;
 }
 .profile .upload img{
     margin-left: 5px;
     padding: 4px;
     margin-top: 3px;
+}
+.profile .upload input{
+    color: white;
 }
 span{
     font-size: 15px;
@@ -56,15 +62,36 @@ span{
     top: 9px;
     color: white;
 }
-ul li a{
-    margin-bottom: 20px;
+.name{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-style: oblique;
 }
+.list{
+   text-align: center;
+}
+
 
 @media (max-width: 400px) {
     .container{
         width: 370px;
+        height: 500px;
         margin: 30px auto;
         border-radius: 10px;
+        position: relative;
     }
-   
+    .name{
+        margin-top: 5px;
+    }
+    
+    .list{
+    display: grid;
+    position: absolute;
+    top: 11rem;
+    left: -1.5rem;
 }
+    
+    
+
+}
+   
