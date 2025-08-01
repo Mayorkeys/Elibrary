@@ -32,6 +32,7 @@ input{
     border-top: none;
     margin-bottom: 20px;
     outline: none;
+    font-size: 15px;
 }
 input:hover{
     border: 1px solid rgb(6, 95, 40);
@@ -56,6 +57,11 @@ input:hover{
     position: absolute;
      top: 23px;
     left: 9px
+}
+p{
+    padding: 3x;
+    font-size: 13px;
+    margin-bottom: 15px;
 }
 button{
     border: none;

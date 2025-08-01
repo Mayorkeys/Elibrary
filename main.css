@@ -16,59 +16,23 @@ body{
 .blue{
   padding: 0;
 } 
-.icon{
-    display: flex;
-    justify-content: space-evenly;
+.profile{
     margin-right: 20px;
 }
-.icon a { 
-    text-decoration: none;
-    font-size: 20px;
-    text-decoration: none;
-}
-.dropdown {
-    overflow: hidden;
-
-}
-.dropdown .drop-btn {
-    border: none;
-    font-size: 12px;
-    margin-top: 7px;
-   
-}
-.dropdown .drop-btn:hover{
+.profile p{
     background-color: green;
+    padding: 3px;
     color: white;
-    transition: 1.2s;
-    padding: 4px;
-    border-radius: 3px;
-
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 4px;
 }
-.drop-content{
-    display: none;
-    position: absolute;
-    box-shadow: 0 1px 0 1px;
-    background-color: antiquewhite;
-    min-width: 20px;
-    z-index: 1;
-}
-.drop-content a{
-    float: none;
-    display: block;
-    font-size: 10px;
-    text-align: left;
-    background-color: white;
+.profile a{
     text-decoration: none;
-    color: black;
+}
+.profile p:hover{
     padding: 5px;
-}
-.drop-content a:hover{
-    padding: 6px;
-    color: green;
 
-}
-.dropdown:hover .drop-content {
-    display: block;
 }
 .container{
     width: 70%;

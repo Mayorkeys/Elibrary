@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ul li{
+    display: inline;
+    margin: 5px;
+    text-decoration: none;
+    background-color: rgb(6, 95, 40);
+    padding: 3px;
+
+    
+}
+ul li:hover{
+    padding: 4px;
+    border-radius: 4px;
+    transition: 0.8s;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+     width: 700px;
+     margin: 5% auto;
+     background-color: aliceblue;
+     box-shadow: 0 0 40px rgb(6, 95, 40);
+}
+.profile{
+    margin: 10px;
+    padding: 7px;
+     
+}
+.profile .box img{
+    height: 100px;
+    margin-left: 10px;
+    background-color: greenyellow;
+}
+.profile .upload{
+    background-color: rgb(6, 95, 40);
+    width: 130px;
+    margin-left: 5px;
+    position: relative;
+}
+.profile .upload img{
+    margin-left: 5px;
+    padding: 4px;
+    margin-top: 3px;
+}
+span{
+    font-size: 15px;
+    margin-left: 2px;
+    position: absolute;
+    top: 9px;
+    color: white;
+}
+ul li a{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 400px) {
+    .container{
+        width: 370px;
+        margin: 30px auto;
+        border-radius: 10px;
+    }
+   
+}
