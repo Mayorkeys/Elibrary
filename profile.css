@@ -74,7 +74,7 @@ span{
 
 @media (max-width: 400px) {
     .container{
-        width: 370px;
+        width: 360px;
         height: 500px;
         margin: 30px auto;
         border-radius: 10px;
@@ -83,15 +83,17 @@ span{
     .name{
         margin-top: 5px;
     }
-    
+}
     .list{
-    display: grid;
-    position: absolute;
-    top: 11rem;
-    left: -1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 35px;
+    
+    
+   
 }
     
     
 
-}
+
    

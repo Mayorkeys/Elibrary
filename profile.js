@@ -1,18 +1,28 @@
 const uploadPicture = document.getElementById("upload-picture");
-const profilePicture = document.getElementById("profile-picture");
 const upload = document.querySelector(".upload");
 
+
+if (localStorage.getItem("uploadPicture")) {
+  uploadPicture.src = localStorage.getItem("uploadPicture"); 
+}
+
+
 upload.addEventListener("click", () => {
-    uploadPicture.click();
-});
+    const input = document.createElement("input");
+    input.type = "file";
+    input.accept = "image/*";
+    input.onchange = (e) => {
+          const file = e.target.files[0];
+          const reader = new FileReader();
+         
+          reader.onload = () => {
+              uploadPicture.src = reader.result;
+              localStorage.setItem("uploadPicture", reader.result);
+          };
 
-uploadPicture.addEventListener("change", (e) => {
-    const file = e.target.files[0];
-    const reader = new FileReader();
-
-    reader.onload = () => {
-        profilePicture.src = reader.result;
-    };
-
-    reader.readAsDataURL(file);
-})
+          reader.readAsDataURL(file);
+        };
+        input.click();
+          
+          });
+      
